@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+button {
+    border: 1px solid #00AFF0;
+    background-color: #00AFF0;
+    color: white;
+    padding: 10px 20px;
+}
+
+button:hover {
+  background-color: white ;
+  color: #00AFF0;
+  cursor: pointer
+}
+
+
+.main{
+  z-index: 0;
+  position: relative;
+  padding-top: 20px;
+}
+
+.logo img{
+  width: 70px;
+  float: left;
+  height: auto;
+}
+
+#logo-cloud img{
+  width: 80px;
+  height: auto;
+}
+
+nav {
+  background-color: #00AFF0;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+  }
+
+  nav ul {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+  }
+  
+  nav a {
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  nav a:hover {
+    color: white;
+  }
+
+  
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: white;
+    top: 0;
+    width: 0%;
+  
+    transition: all ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    width: 100%;
+  }
+
+  #title1 h2:hover {
+    color: #00AFF0;
+  }
+
+  #title1 p:hover {
+    color: #00AFF0;
+  }
+
+  #title2 h2:hover {
+    color: #00AFF0;
+  }
+
+  #title3 h2:hover {
+    color: #00AFF0;
+  }
+
+#outer
+{
+    width:100%;
+    text-align: center;
+}
+.inner
+{
+    display: inline-block;
+}
+
+input[type=text]{
+    width:100%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+  
+  input[type=text]:focus{
+    border-color:rgb(233, 139, 155);
+    box-shadow:0 0 8px 0 rgb(233, 139, 155);
+  }
+  
+
+fieldset{
+    margin-top: 10px;
+    border: rgb(192,192,192,0.1) 1px;
+    height: 250px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.12);
+}
+
+
+
+.table-box
+{
+    margin-left: 10px;
+}
+
+.table-row{
+    display: table;
+    width: 120%;
+    margin: 10px auto;
+    font-family: sans-serif;
+    background: transparent;
+    padding: 12px 0;
+    color: #555;
+    font-size: 13px;
+    box-shadow: 0 1px 4px 0px rgba(0,0,50,0.3);
+}
+
+.table-head{
+    background: #00AFF0;
+    box-shadow: none;
+    color: #fff;
+    font-weight: 600;
+}
+.table-head .table-cell{
+    border-right: none;
+}
+.table-cell{
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    padding: 4px 0;
+    vertical-align: middle;
+}
+.first-cell{
+    text-align: left;
+    padding-left: 10px;
+}
+.last-cell{
+    border-right: none;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .table-row {
+    font-size: 11px;
+  }
+}

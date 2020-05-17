@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>xLoadIt - Manage your files</title>
+  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style/files.css">
+
+    </head>
+<body>
+
+
+    <nav>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="./profile">Profile</a></li>
+        </ul>
+
+        <div style="float: left ; margin-top: 10px;" class="logo">
+          <img style = "padding-left: 20px;" src="./img/logo.png">
+      </div>
+      </nav>
+      
+
+    <div style ="margin-top: 120px ; margin-left: 420px" class="container">
+        <div class="row">
+          <div class="col-lg-6" id="uploadDiv">
+
+            <input type="file" name="files" id="upload" multiple>
+    
+              <div  style="margin-top: 50px" class="input-group upload-group">
+    
+              <button type="button" class="btn btn-primary upload-group" onclick="confirmUpload()">Upload</button>
+              <button type="button" class="btn btn-primary upload-group"><a style="text-decoration: none ; color:black" href="./#downloadArea">Download</a></button>
+              <button type="button" class="btn btn-primary upload-group" onclick="getFileURL()">Get URL</button>
+              <button type="button" class="btn btn-primary upload-group" onclick="deleteFile()">Delete</button>
+              <button type="button" class="btn btn-primary upload-group" onclick="listFiles()">List Files</button>               
+          </div>
+          <button type="button" style=" margin-top: 10px ; width: 84px"><a style="text-decoration: none ; color:black" href="./files">Clear</a></button>
+          <p style = "margin-top: 20px"><input id="linkFileName" type="text" placeholder="Enter file name to delete the file or to get the URL of the file" style="width:58% ; height: 30px;"></p>
+        </div>
+      </div>
+      <div class="area-answer"></div>
+    </div>
+
+
+    <div style="margin-top: 40px" id="file-area"></div>
+
+	<script src="./js/multi.js"></script>
+	<script>
+		new InputFile({
+			// options
+		});
+    </script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/7.14.2/firebase-app.js"></script>
+  <script src="/__/firebase/7.14.2/firebase-auth.js"></script>
+  <script src="/__/firebase/7.14.2/firebase-storage.js"></script>
+
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript" src="./js/files.js"></script>
+
+</body>
+</html>

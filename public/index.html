@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>xLoadIt </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+<link rel="stylesheet" href="./style/aboutpage.css">
+
+<style>
+body {font-family: 'Montserrat Medium'}
+</style>
+
+<body>
+
+<!-- Navbar -->
+  <nav>
+      <!-- <div class="logo"> -->
+         <!-- <img src="./img/logo.png"> -->
+      <!-- </div> -->
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#userdetails">User Details</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="./home">Sign In</a></li>
+    </ul>
+  </nav>
+
+<!-- Page content - what is max width ??? -->
+<div class="main" id="home" style = " background-color:#00AFF0  ; margin-left:auto; margin-right:auto ; width: 100%; height: 100vh">
+    
+    <!-- <div class="logo"> -->
+        <!-- <img src="./img/logo.png"> -->
+    <!-- </div> -->
+    
+    <div class="main" style =" margin-top: 70px ; margin-left:auto; margin-right:auto ; width: 100% ; height: 80vh">       
+        <div id="logo-cloud">
+            <img style = "margin-top: 10px; padding-left: 600px;" src="./img/logo-cloud.png">
+        </div>
+
+        <div class="container" style =" margin-bottom: 15px">
+            <div style = "text-align: center">
+                <h2 style ="color:black ; font-size:60px ; margin-bottom: 35px ; margin-top: 70px">xLoadIt - Manage your files</h2>
+                <p style ="color:black ; margin-bottom: 100px ; font-size:25px "><B>Upload</B>,  <B>Store</B>,  <B>Download</B>, and <B>Share</B> your files</p>
+                <p><i style ="color:white ; font-size:50px " >Designed by Ibtihal El Mimouni</i></p>
+                
+            </div>
+            </div>
+            
+    </div>
+    </div>
+
+
+    <div class="main" id="about" style = "margin-left:auto; margin-right:auto ; width: 100%; height: 100vh">
+    <div id="about" style = "margin-top: 40px ; margin-bottom: 10px ; margin-left:auto; margin-right:auto ; width: 70%">
+        <div class="container" style =" margin-bottom: 15px">
+            <div id = "title1" style = "text-align: center">
+                <h2 style ="margin-bottom: 15px">ABOUT</h2>
+                <p  id = "xloadit" style ="margin-bottom: 50px ; border-bottom: 1px solid black ; padding-bottom: 20px"><i>xLoadIt - Manage your files</i></p>
+            </div>
+            </div>
+    
+            <div class="container" style =" margin-top: 15px ; margin-bottom: 15px">
+            <div style = "text-align: justify">
+            <p style ="margin-bottom: 15px"><B>xLoadIt</B> is a file hosting service that allows you to <B>upload</B>, <B>store</B>, <B>download</B> and <B>share</B> your files. </p>
+            
+            <p style ="margin-bottom: 15px">The service offers useful file sharing options by generating links. <B>Free users</B> are able to download any type of files using a <B>shared link.</B></p>      
+            
+            <p style ="margin-bottom: 15px"><B>Registering</B> to the service unlocks a host of features. You can have access to a <B>file manager</B> that helps you track uploads and manage files added to your <B>xLoadIt account.</B> You can sort through all types of files with ease and organize them in folders. Therefore, no matter where you go, you can take your files with you. Furthermore, you get the option to create a <B>sharing link</B> while uploading the file or folder. All files and folders you share from your xLoadIt account, will be accessible by anyone with the shared URL.
+            </p>
+    
+            <p>xLoadIt is an <B>affordable</B> service, you can switch to a <B>paid account</B> anytime you want for more storage options. Check our pricing plan <a href="#pricing" style = "color:#00AFF0">here.</a>
+            </p>
+            </div>
+            </div>
+    </div>
+
+            <!-- Download files -->
+            <div id = "downloadArea" style = "background-color: rgb(0, 0, 0); margin-left:auto; margin-right:auto; width: 100%" >
+                <h1 style = "color:white ; margin-bottom: 20px ; margin-left:15px">Download files</h1>
+                <p style = "color:white ; margin-bottom: 20px ; margin-left:15px">Use a shared link to download files</p>
+                <p style = "margin-bottom: 20px ; margin-left:15px"><input id="linkURL" type="text" placeholder="Enter URL to download file" style="width:100%"></p>
+                <button onclick="enterURL()" style = "margin-bottom: 20px ; margin-left:15px">Download</button>
+                
+                <script>
+                    function enterURL() {
+                      var x = document.getElementById("linkURL").value;
+                    
+                      window.location.href = x;
+                    
+                    }
+                    </script>    
+            </div>  
+    </div>
+
+        <!-- User Derails -->
+
+  <div class="main" id="userdetails" style = "margin-left:auto; margin-right:auto ; width: 100%; height: 100vh">
+    <div style ="margin-top: 40px ; margin-left:auto; margin-right:auto ; width: 60%">
+    <div  id = "title2" style = "text-align: center">
+    <h2 style ="margin-bottom: 50px ; border-bottom: 1px solid black ; padding-bottom: 20px">USER DETAILS</h2></div>
+    <div style = "text-align: justify"> 
+        <B>As an Internet user you can:</B>
+   
+    <ul style="margin-left: 70px; margin-top: 20px" class="custom">
+        <li>Download a file using a download link</li>
+        <li style="margin-top: 5px">Register as a new user if you don't have an account</li>
+    </ul>   
+    </div>
+
+    <div style = "margin-top: 30px; text-align: justify"> 
+        <B>As a registered user you can:</B>
+    <ul style="margin-left: 70px; margin-top: 20px" class="custom">
+        <li>Upload any type of files : images, documents, videos, etc.</li>
+        <li style="margin-top: 5px">Download these files</li>
+        <li style="margin-top: 5px">Delete these files</li>
+        <li style="margin-top: 5px">Share these files by generating a link for public use</li>
+        <li style="margin-top: 5px">View and edit your profile</li>
+        <li style="margin-top: 5px">Switch to a paid account for unlimited storage</li>
+        <li style="margin-top: 5px">Logout</li>
+    </ul>   
+    </div>
+    </div>
+    
+        <div>
+            <img style = "height: 200px; padding-left: 850px;" src="./img/logo.png">
+        </div>
+
+</div>
+
+         <!-- Pricing -->
+         <div class="main" id="pricing">
+            <div style = "margin-top: 40px ; margin-left:auto; margin-right:auto ; width: 70%">
+            <div  id = "title3" style = "text-align: center">
+                <h2 style ="margin-bottom: 50px ; border-bottom: 1px solid black ; padding-bottom: 20px">PRICING</h2>
+            </div>
+            </div>
+        
+            <div id="tablecontainer" class="container">
+        
+                <table style="float: left ; margin-left: 400px"><tr><td><div class="table-box">
+                    <div class="table-row table-head">
+                        <div class="table-cell">
+                            <p>Lite Plan</p>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-cell">
+                            <p><B>Free</B></p>
+                        </div>
+                    </div>
+            
+                    <div class="table-row">
+                        <div class="table-cell">
+                            <p>500 Gb of space</p>
+                        </div>
+                    </div>
+            
+                    <div class="table-row">
+                        <div class="table-cell">
+                            <p>File Management and Sharing</p>
+                        </div>
+                    </div>
+            
+                    <div class="table-row">
+                        <div class="table-cell">
+                            <p>Free Download</p>
+                        </div>
+                    </div>
+            
+            
+            
+            </div> </td></tr></table>
+        
+                <table style="float: right ; margin-right: 400px"><tr><td><div class="table-box">
+                <div class="table-row table-head">
+                    <div class="table-cell">
+                        <p>Pro Plan</p>
+                    </div>
+                </div>
+        
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p><B>15$ / user / month</B></p>
+                    </div>
+                </div>
+        
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>Unlimited Storage</p>
+                    </div>
+                </div>
+        
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>File Management and Sharing</p>
+                    </div>
+                </div>
+        
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>Free Download</p>
+                    </div>
+                </div>
+        
+        
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>Safe, Reliable Backup</p>
+                    </div>
+                </div>
+        
+        </div> 
+        </td>
+        </tr>
+        </table>
+        </div>
+        </div>
+  
+<!-- End Page Content -->
+</div>
+
+
+
+</body>
+</html>

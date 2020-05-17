@@ -1,0 +1,42 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source":"/home",
+        "destination":"/home.html",
+        "type" : 301
+      },
+      {
+        "source":"/signup",
+        "destination":"/signup.html",
+        "type" : 301
+      },
+      {
+        "source":"/profile",
+        "destination":"/profile.html",
+        "type" : 301
+      },
+      {
+        "source": "/edit",
+        "destination": "/edit.html",
+        "type" : 301
+      },
+      {
+        "source": "/reset",
+        "destination": "/reset.html",
+        "type" : 301
+      },
+      {
+        "source": "/files",
+        "destination": "/files.html",
+        "type" : 301
+      }
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat Medium'
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center
+}
+
+.logo img{
+    width: 70px;
+    float: left;
+    height: auto;
+  }
+
+  .homeicon img{
+    width: 70px;
+    height: auto;
+  }
+  .homeicon {
+    padding-right: 20px ;
+    float: right;
+    text-align: center;
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+}
+
+button {
+    float: right;
+    margin: 20px 42px 0px 0px;
+    padding: 10px 20px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: white;
+    color: rgb(0, 0, 0);
+    margin-right: 5px;
+    margin: 20px 0px 0px 5px
+}
+
+button:hover {
+    background-color: #00AFF0;
+    cursor: pointer
+}
+
+.container div {
+    margin: 20px 40px;
+    position: relative
+}
+
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%
+}
+
+p:first-child {
+    font-size: 2rem
+}
+
+#displayNameHolder {
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+}
